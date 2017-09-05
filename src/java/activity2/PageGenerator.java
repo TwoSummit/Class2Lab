@@ -33,7 +33,7 @@ public class PageGenerator extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
-            /* TODO output your page here. You may use following sample code. */
+            
             String html = ""; /* stores html text */
             String cCR = System.getProperty("line.separator"); /* cariage return */
             
@@ -41,10 +41,38 @@ public class PageGenerator extends HttpServlet {
                 "<!DOCTYPE html>" + cCR + 
                 "<html>" + cCR + 
                 "<head>" + cCR + 
-                "<title>Servlet PageGenerator</title>" + cCR + 
+                   "<title>Servlet PageGenerator</title>" + cCR + 
                 "</head>" + cCR + 
                 "<body>" + cCR + 
-                "<h1>Servlet PageGenerator at " + request.getContextPath() + "</h1>" + cCR + 
+                    "<h1>Page Generation</h1>" + cCR + 
+                    "<table>" + cCR + 
+                    "<table class=\"table table-striped\">" + cCR + 
+                        "<thead>" + cCR + 
+                            "<tr>" + cCR + 
+                                "<th>Firstname</th>" + cCR + 
+                                "<th>Lastname</th>" + cCR + 
+                                "<th>Email</th>" + cCR + 
+                            "</tr>" + cCR + 
+                        "</thead>" + cCR + 
+                        "<tbody>" + cCR + 
+                            "<tr>" + cCR + 
+                                "<td>John</td>" + cCR + 
+                                "<td>Doe</td>" + cCR + 
+                                "<td>john@example.com</td>" + cCR + 
+                            "</tr>" + cCR + 
+                            "<tr>" + cCR + 
+                                "<td>Mary</td>" + cCR + 
+                                "<td>Moe</td>" + cCR + 
+                                "<td>mary@example.com</td>" + cCR + 
+                            "</tr>" + cCR + 
+                            "<tr>" + cCR + 
+                                "<td>July</td>" + cCR + 
+                                "<td>Dooley</td>" + cCR + 
+                                "<td>july@example.com</td>" + cCR + 
+                            "</tr>" + cCR + 
+                        "</tbody>" + cCR + 
+                    "</table>" + cCR + 
+                    "</table>" + cCR + 
                 "</body>" + cCR + 
                 "</html>" + cCR;
             
