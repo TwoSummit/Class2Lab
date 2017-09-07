@@ -25,23 +25,19 @@ public class WelcomeService {
         int time = cal.get(Calendar.HOUR_OF_DAY);
         String timeOfDay;
         
-        // 12:00am starts morning
-        if( time >= 0 ) {
-            timeOfDay = "morning";
+        if( time <= 24 && time > 17 ) {
+            timeOfDay = "evening";
         } 
         
-        // 12:00pm starts afternoon 
-        else if( time >= 12 ){
+        else if( time <= 17 && time > 12 ){
             timeOfDay = "afternoon";
         } 
         
-        // 5:00pm starts evening 
-        else if( time >= 17 ){
-            timeOfDay = "evening";
+        else if( time <= 12 ){
+            timeOfDay = "morning";
         }
         
-        // Catch all
-        else {
+        else{
             timeOfDay = "Time of day could not be computed.";
         }
         
