@@ -4,6 +4,12 @@
     Author     : cssco
 --%>
 
+<%@page import="javax.json.JsonReader"%>
+<%@page import="javax.json.JsonArray"%>
+<%@page import="javax.json.JsonObject"%>
+<%@page import="javax.json.Json"%>
+<%@page import="java.io.InputStream"%>
+<%@page import="java.net.URL"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -13,9 +19,9 @@
     </head>
     <body>
         <%
-            
+           
             String html = ""; /* stores html text */
-            String cCR = System.getProperty("line.separator"); /* cariage return */
+            String cCR = System.getProperty("line.separator"); /* cariagde return */
             
             html = html + 
                 "<!DOCTYPE html>" + cCR + 
