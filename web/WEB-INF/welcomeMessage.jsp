@@ -1,6 +1,6 @@
 <%-- 
-    Document   : index
-    Created on : Aug 31, 2017, 9:18:04 PM
+    Document   : welcomeMessage
+    Created on : Sep 7, 2017, 4:17:51 PM
     Author     : cssco
 --%>
 
@@ -12,11 +12,6 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Home Page</h1>
-        <ul>
-            <li>
-                <p>Click <a href="welcomeMessage.jsp">here</a> to goto Welcome Service Form<p>
-            </li>
-        </ul>
+        <h1>Hello World!</h1>
     </body>
 </html>
